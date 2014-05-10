@@ -1,0 +1,23 @@
+#!/bin/sh
+
+## google
+sudo apt-get install google-chrome
+
+## openssh(openssh-server openssh-client)
+sudo apt-get install openssh-server openssh-client
+#for ubuntu
+sudo service ssh start 
+#iptables -P INPUT ACCEPT #close firewall
+#iptables -P OUTPUT ACCEPT
+#for fedora
+#service sshd start
+#service iptables stop #close firewall 
+
+## flashplayer
+sudo apt-get install flashplugin-installer
+
+## all multimedia plugin (include flashplayer)
+#apt-get install ubuntu-restricted-extras
+
+sudo apt-get install vim
+
