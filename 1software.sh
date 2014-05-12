@@ -35,6 +35,9 @@ zhcon --utf8 --drv=vga
 ## emacs 
 sudo apt-get install emacs
 
+## gcc g++
+sudo apt-get install gcc g++
+
 ## git
 sudo apt-get install git
 
