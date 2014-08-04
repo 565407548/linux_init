@@ -48,9 +48,5 @@ EOF
 sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 sudo echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
 
-## ceph repos (http://eu.ceph.com/docs/wip-6919/start/quick-start/)
-sudo wget -q -O- https://raw.github.com/ceph/ceph/master/keys/release.asc | sudo apt-key add -
-sudo echo deb http://ceph.com/debian/ ${ubuntu_name} main | sudo tee /etc/apt/sources.list.d/ceph.list
-
 sudo apt-get update
 
