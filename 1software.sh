@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## google
-sudo apt-get install -y google-chrome
+sudo apt-get install -y google-chrome-stable
 
 ## openssh(openssh-server openssh-client)
 sudo apt-get install -y openssh-server openssh-client

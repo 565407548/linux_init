@@ -49,10 +49,10 @@ sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo a
 sudo echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
 
 ## subversion
-sudo cat > /etc/apt/sources.list.d/sohu.list <<EOF
-  deb http://ppa.launchpad.net/dominik-stadler/subversion-1.7/ubuntu ${ubuntu_name} main 
-deb-src http://ppa.launchpad.net/dominik-stadler/subversion-1.7/ubuntu ${ubuntu_name} main 
-EOF
+# sudo cat > /etc/apt/sources.list.d/subversion.list <<EOF
+#   deb http://ppa.launchpad.net/dominik-stadler/subversion-1.7/ubuntu ${ubuntu_name} main 
+# deb-src http://ppa.launchpad.net/dominik-stadler/subversion-1.7/ubuntu ${ubuntu_name} main 
+# EOF
 
 sudo apt-get update
 
