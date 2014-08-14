@@ -45,5 +45,8 @@ sudo apt-get install -y git
 ## subversion
 sudo apt-get install -y subversion
 
+## wqy fonts
+sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+
 ## reboot
 #sudo reboot
