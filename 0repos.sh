@@ -44,15 +44,20 @@ sudo cat > /etc/apt/sources.list.d/sohu.list <<EOF
     deb-src http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-backports main restricted universe multiverse
 EOF
 
-## google-chrome repos
+## google-chrome python-autopep8(code-formate)
+sudo touch /etc/apt/sources.list.d/others.list
 sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-sudo echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+sudo cat > /etc/apt/sources.list.d/others.list <<EOF
+deb http://us.archive.ubuntu.com/ubuntu ${ubuntu_name} main universe
+deb http://dl.google.com/linux/chrome/deb/ stable main
+EOF
 
 ## subversion
 # sudo cat > /etc/apt/sources.list.d/subversion.list <<EOF
 #   deb http://ppa.launchpad.net/dominik-stadler/subversion-1.7/ubuntu ${ubuntu_name} main 
 # deb-src http://ppa.launchpad.net/dominik-stadler/subversion-1.7/ubuntu ${ubuntu_name} main 
 # EOF
+
 
 sudo apt-get update
 

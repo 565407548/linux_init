@@ -1,0 +1,12 @@
+
+(defun code-style (tool args) 
+  "enforce code style"
+  (let ((position (point))) 
+    (progn 
+      (if (executable-find tool) 
+          (shell-command-on-region 
+           (point-min) (point-max) 
+           (format "%s %s" tool args) t t) 
+        (message (format "can't find %s"  tool)))) 
+    (goto-char position)))
+
