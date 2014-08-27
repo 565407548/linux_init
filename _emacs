@@ -41,7 +41,9 @@
 ;;--------------------------------------------c/c++ mode---------------------------------------------
 ;;(load-file "~/tools/clang-format/clang-format.el")
 (global-set-key [C-tab] 'clang-format-buffer)
-
+;;(defun my-c-mode-settings
+;;(local-set-key [C-tab] 'clang-format-buffer))
+;;(add-hook 'c-mode-common-hook 'my-c-mode-settings)
 ;;;; CC-mode配置  http://cc-mode.sourceforge.net/
 ;; (require 'cc-mode)
 ;; (c-set-offset 'inline-open 0)
