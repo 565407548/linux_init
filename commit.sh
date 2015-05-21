@@ -11,3 +11,7 @@ git commit -m "algorithm update"
 git push algorithm master
 
 ##design_pattern
+cd ~/git/design_pattern
+git add --all ./*
+git commit -m "design_pattern"
+git push design_pattern master
