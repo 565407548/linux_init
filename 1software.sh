@@ -46,7 +46,13 @@ sudo apt-get install -y git
 sudo apt-get install -y subversion
 
 ## wqy fonts
-sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+sudo apt-get install -y ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+
+## open-jdk
+sudo apt-get install -y openjdk-7-jdk
+
+## eclipse
+sudo apt-get install -y eclipse
 
 ## reboot
 #sudo reboot

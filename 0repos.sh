@@ -4,6 +4,7 @@
 
 ubuntu_name=$(lsb_release -sc)
 
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.back
 sudo rm -R /etc/apt/sources.list.d/*
 sudo cat > /etc/apt/sources.list <<EOF
 deb http://mirrors.163.com/ubuntu/ ${ubuntu_name} main restricted universe multiverse
@@ -16,32 +17,6 @@ deb-src http://mirrors.163.com/ubuntu/ ${ubuntu_name}-security main restricted u
 deb-src http://mirrors.163.com/ubuntu/ ${ubuntu_name}-updates main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ ${ubuntu_name}-proposed main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ ${ubuntu_name}-backports main restricted universe multiverse
-
-deb http://archive.ubuntu.com/ubuntu/ ${ubuntu_name} main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-security main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-updates main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-proposed main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-backports main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ ${ubuntu_name} main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-security main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-updates main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-proposed main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ ${ubuntu_name}-backports main restricted universe multiverse
-EOF
-
-## sohu repos
-sudo touch /etc/apt/sources.list.d/sohu.list
-sudo cat > /etc/apt/sources.list.d/sohu.list <<EOF
-    deb http://mirrors.sohu.com/ubuntu/ ${ubuntu_name} main restricted universe multiverse
-    deb http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-security main restricted universe multiverse
-    deb http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-updates main restricted universe multiverse
-    deb http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-proposed main restricted universe multiverse
-    deb http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-backports main restricted universe multiverse
-    deb-src http://mirrors.sohu.com/ubuntu/ ${ubuntu_name} main restricted universe multiverse
-    deb-src http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-security main restricted universe multiverse
-    deb-src http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-updates main restricted universe multiverse
-    deb-src http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-proposed main restricted universe multiverse
-    deb-src http://mirrors.sohu.com/ubuntu/ ${ubuntu_name}-backports main restricted universe multiverse
 EOF
 
 ## google-chrome python-autopep8(code-formate)
