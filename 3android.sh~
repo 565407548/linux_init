@@ -1,0 +1,7 @@
+#!/bin/sh
+
+## sdk
+git clone https://android.googlesource.com/platform/sdk.git
+
+## ndk
+git clone https://android.googlesource.com/platform/ndk.git

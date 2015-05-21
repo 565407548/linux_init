@@ -50,9 +50,13 @@ sudo apt-get install -y ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
 
 ## open-jdk
 sudo apt-get install -y openjdk-7-jdk
+sudo apt-get install -y openjdk-7-source
 
 ## eclipse
 sudo apt-get install -y eclipse
+
+## rar
+sudo apt-get install -y rar
 
 ## reboot
 #sudo reboot
