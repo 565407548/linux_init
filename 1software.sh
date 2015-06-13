@@ -58,5 +58,8 @@ sudo apt-get install -y eclipse
 ## rar
 sudo apt-get install -y rar
 
+## gnome-do or kupfer
+sudo apt-get install -y gnome-do
+
 ## reboot
 #sudo reboot
